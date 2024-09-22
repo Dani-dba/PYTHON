@@ -1,0 +1,8 @@
+n1: str = input('Digite Algo:')
+print('Tipo primitivo:', type(n1))
+print('Alfanumerico?', n1.isalnum())
+print('Alfabetico?', n1.isalpha())
+print('Numérico?',n1.isnumeric())
+print ('Letras maiusculas?', n1.isupper())
+print ('Letras minusculas?', n1.islower())
+print ('Capitalizado?', n1.istitle())
