@@ -1,0 +1,99 @@
+from random import randint
+from time import sleep
+itens = ('Pedra', 'Papel', 'Tesoura', 'Lagarto', 'Spock')
+computador = randint(0,4)
+#print('O computador escolheu {}'.format(itens[computador]))
+print('''Suas opções:
+[0] Pedra 
+[1] Papel
+[2] Tesoura
+[3] Lagarto
+[4] Spock
+''')
+print('-='*10)
+jogador = int(input('Qual sua Jogada? '))
+print('-='*10)
+print ('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PÔ')
+print('-='*10)
+print('Você escolheu {}'.format(itens[jogador]))
+print('Computador escolheu {}'.format(itens[computador]))
+if computador == 0:  #pedra
+    if jogador == 0: #pedra
+        print('EMPATE')
+    elif jogador == 1: #papel
+        print ('Papel cobre pedra!')
+        print('VOCÊ VENCEU!')
+    elif jogador == 2: #tesoura
+        print('Pedra quebra tesoura!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 3: #lagarto
+        print('Pedra esmaga lagarto!')
+        print('VOCÊ PERDEU')
+    elif jogador == 4: #spock
+        print('Spock vaporiza pedra!')
+        print('VOCÊ VENCEU!')
+elif computador == 1: #PAPEL
+    if jogador == 0: #PEDRA
+       print('Papel cobre pedra!')
+       print('VOCÊ PERDEU!')
+    elif jogador == 1: #PAPEL
+        print('EMPATE!')
+    elif jogador == 2: #TESOURA
+        print('Tesoura corta papel')
+        print('VOCÊ VENCEU!')
+    elif jogador == 3: #LAGARTO
+        print('Lagarto come papel!')
+        print('VOCê VENCEU!')
+    elif jogador == 4: #SPOCK
+        print('Papel refuta Spock')
+        print('VOCÊ PERDEU!')
+elif computador == 2: #TESOURA
+    if  jogador == 0: #PEDRA
+        print('Pedra quebra Tesoura!')
+        print('VOCÊ VENCEU!')
+    elif jogador == 1: #PAPEL
+        print('Tesoura corta Papel!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 2: #TESOURA
+        print('EMPATE')
+    elif jogador == 3:#LAGARTO
+        print('Tesoura decapita Lagarto!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 4:#SPOCK
+        print('Spock derrete Tesoura!')
+        print('VOCÊ VENCEU!')
+elif computador == 3: #LAGARTO
+    if jogador == 0: #PEDRA
+        print('Pedra esmaga Lagarto!')
+        print('VOCÊ VENCEU!')
+    elif jogador == 1: #PAPEL
+        print('Lagarto come papel!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 2: #TESOURA
+        print('Tesoura decapita Lagarto!')
+        print('VOCÊ VENCEU!')
+    elif jogador == 3: #LAGARTO
+        print('EMPATE!')
+    elif jogador == 4: #SPOCK
+        print('Lagarto envenena Spock!')
+        print('VOCÊ PERDEU!')
+elif computador == 4: #SPOCK
+    if jogador == 0: #PEDRA
+        print('Spock vaporiza Pedra!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 1: #PAPEL
+        print('Papel refuta Spock!')
+        print('VOCê VENCEU!')
+    elif jogador == 2: #TESOURA
+        print('Spock derrete Tesoura!')
+        print('VOCÊ PERDEU!')
+    elif jogador == 3: #LAGARTO
+        print('Lagarto envenena Spock!')
+        print('VOCÊ VENCEU!')
+    elif jogador == 4: #SPOCK
+        print('EMPATE!')
+
