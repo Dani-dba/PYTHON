@@ -29,7 +29,7 @@ def resumo(preço=0, aumento=10, redução=5):
     print(f'Preço analizado: \t{moeda(preço)}')
     print(f'Dobro do preço: \t{dobro(preço, True)}')
     print(f'Metade do preço: \t{metade(preço, True)}')
-    print(f'{redução}% de redução {diminuir(preço, redução, True)}')
-    print(f'{aumento}% de aumento {aumentar(preço, aumento, True)}')
+    print(f'{redução}% de redução:   \t{diminuir(preço, redução, True)}')
+    print(f'{aumento}% de aumento:   \t{aumentar(preço, aumento, True)}')
     print('-' * 30)
 
